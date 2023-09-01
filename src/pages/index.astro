@@ -1,0 +1,175 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Banner from '../components/Banner.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+	<Banner />
+			
+<div>
+    <!-- Experiencias -->
+    <section class="relative bg-[url('./images/mundo.webp')] bg-cover bg-center bg-no-repeat">
+        <div class="absolute inset-0 bg-white/75 bg-transparent from-white/15 to-white/15 bg-gradient-to-r bg-gradient-to-l"></div>
+        <div class="relative text-center pt-12 ">
+            <h1 class="text-6xl text-[#d9974d] font-semibold tracking-wide">Experiencias</h1>
+            <p class="text-[#203264] pt-3 text-lg font-semibold tracking-wide">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet tempore nisi reprehenderit, placeat</p>
+            <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 flex ">
+                <ul class="grid gap-10 sm:grid-cols-1 lg:grid-cols-3 mx-auto">
+                    <li>
+                        <div class="block">
+                            <img src="./images/luna-de-miel.webp" alt="" class="h-[300px] w-full object-contain sm:h-[400px]" />
+                            <div class="w-3/5 mx-auto pt-3">
+                                <a href="#" class="block w-full bg-transparent rounded-full border border-[#d9974d] px-6 py-2 text-sm  text-[#d9974d] shadow  sm:w-auto">
+                                    LUNA DE MIEL <i class="fa-solid fa-arrow-right-long pl-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block ">
+                            <img src="./images/familiar.webp" alt="" class="h-[300px] w-full object-contain sm:h-[400px]" />
+                            <div class="w-3/5 mx-auto pt-3">
+                                <a href="#" class="block w-full bg-transparent rounded-full border border-[#d9974d] px-6 py-2 text-sm text-[#d9974d] shadow  sm:w-auto">
+                                    FAMILIAR <i class="fa-solid fa-arrow-right-long pl-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <img src="./images/engrupo.webp" alt="" class="h-[300px] w-full object-contain sm:h-[400px]" />
+                            <div class="w-3/5 mx-auto pt-3">
+                                <a href="#" class="block w-full bg-transparent rounded-full border border-[#d9974d] px-6 py-2 text-sm text-[#d9974d] shadow  sm:w-auto">
+                                    EN GRUPO <i class="fa-solid fa-arrow-right-long pl-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Agenda rapido -->
+    <section class="relative bg-[url('./images/colosseum-in-rome-at-dusk.webp')] bg-cover bg-center bg-no-repeat lg:h-[75vh] h-[80vh]">
+        <div class="absolute inset-0 bg-black/50 bg-transparent from-black/50 to-black/50 bg-gradient-to-r bg-gradient-to-l"></div>
+        <div class="relative text-center lg:pt-24 pt-8">
+            <h1 class="lg:text-6xl text-3xl text-white font-semibold tracking-wide ">Agenda rápido</h1>
+            <div class="lg:pt-12 pt-6 lg:w-[50vw] w-[90vw] m-auto">
+                <div class="pb-6">
+                    <div class="flex gap-6">
+                        <h1 class="text-white my-auto">NOMBRE</h1>
+                        <input type="text" class="w-full bg-transparent	rounded-full border border-[#d9974d]  focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8">
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 pb-6">
+                    <div class="flex gap-10">
+                        <h1 class="text-white my-auto">FECHA</h1>
+                        <input type="text" class="w-full bg-transparent rounded-full border border-[#d9974d]  focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8">
+                    </div>
+                    <div class="flex lg:gap-10 gap-3 justify-end">
+                        <h1 class="text-white my-auto">PAÍSES A VISITAR</h1>
+                        <div class="flex gap-3 ">
+                            <button class="rounded-full text-white border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]">1</button>
+                            <button class="rounded-full text-white border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]">2</button>
+                            <button class="rounded-full text-white border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]">3</button>
+                            <button class="rounded-full text-white border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]">4</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 pb-6">
+                    <div class="flex gap-3">
+                        <h1 class="text-white my-auto">TELÉFONO</h1>
+                        <input type="text" class="w-full bg-transparent rounded-full border border-[#d9974d] focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8">
+                    </div>
+                    <div class="flex gap-6">
+                        <h1 class="text-white my-auto">CORREO</h1>
+                        <input type="text" class="w-full bg-transparent rounded-full border border-[#d9974d] focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8">
+                    </div>
+                </div>
+                <div class="flex justify-center gap-6 py-3">
+                    <button class="rounded-full text-white bg-[#d9974d] border border-[#d9974d] py-2 px-12">ENVIAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experiencias -->
+    <section class="text-center py-12">
+        <h1 class="text-6xl text-[#d9974d] font-semibold tracking-wide">Explora</h1>
+        <p class="text-[#203264] pt-3 text-lg font-semibold tracking-wide">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet tempore nisi </p>
+        <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 flex ">
+            <i class="fa-solid fa-chevron-left my-auto px-8 text-xl"></i>
+            <ul class="grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-4">
+                <li>
+                    <a href="#" class="block">
+                        <img src="./images/basilica-of-santa-maria-della-salud-venice.webp" alt="" class="h-[300px] w-full object-cover sm:h-[350px] rounded-3xl shadow-2xl" />
+                        <div class="relative pt-3 ">
+                            <h3 class="text-[#203264] pt-3 text-lg font-bold">Lorem ipsum, dolor sit</h3>
+                            <p class="mt-2">
+                                <span> <i class="fa-solid fa-location-dot text-[#d9974d]"></i></span>
+                                <span class="tracking-wider text-gray-900"> Italia </span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block ">
+                        <img src="./images/closeup-shot-of-cochem-streets-in-germany.webp" alt="" class="h-[300px] w-full object-cover sm:h-[350px] rounded-3xl shadow-2xl" />
+                        <div class="relative pt-3">
+                            <h3 class="text-[#203264] pt-3 text-lg font-bold">Lorem ipsum, dolor sit</h3>
+                            <p class="mt-2">
+                                <span> <i class="fa-solid fa-location-dot text-[#d9974d]"></i></span>
+                                <span class="tracking-wider text-gray-900"> Alemania </span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block">
+                        <img src="./images/largest-stadium-of-barcelona-from-helicopter-catalonia.webp" alt="" class="h-[300px] w-full object-cover sm:h-[350px] rounded-3xl shadow-2xl" />
+                        <div class="relative pt-3">
+                            <h3 class="text-[#203264] pt-3 text-lg font-bold">Lorem ipsum, dolor sit</h3>
+                            <p class="mt-2">
+                                <span> <i class="fa-solid fa-location-dot text-[#d9974d]"></i></span>
+                                <span class="tracking-wider text-gray-900"> España </span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block">
+                        <img src="./images/beautiful-view-of-lake-surrounded-by-mountains-in-longrin-lake-and-dam-switzerland.webp" alt="" class="h-[300px] w-full object-cover sm:h-[350px] rounded-3xl shadow-2xl" />
+                        <div class="relative pt-3">
+                            <h3 class="text-[#203264] pt-3 text-lg font-bold">Lorem ipsum, dolor sit</h3>
+                            <p class="mt-2">
+                                <span> <i class="fa-solid fa-location-dot text-[#d9974d]"></i></span>
+                                <span class="tracking-wider text-gray-900"> Suiza </span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <i class="fa-solid fa-chevron-right my-auto px-8 text-xl"></i>
+        </div>
+    </section>
+
+
+</div>
+
+		</main>
+		<Footer />
+	</body>
+</html>

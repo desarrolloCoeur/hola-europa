@@ -1,0 +1,56 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<body>
+	<header class="fixed z-10 w-full p-6 transition duration-700 ease-in-out ">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+            <div class="flex-1 md:flex md:items-center md:gap-12">
+                <a class="block" href="#">
+                    <img class="h-20" src="images/logo-holaeuropa.png" alt="Logo Hola Europa">
+                </a>
+            </div>
+            <div class="md:flex md:items-center md:gap-12">
+                <nav aria-label="Global" class="hidden md:block">
+                    <ul class="flex items-center gap-12 text-ms uppercase">
+                        <li>
+                            <a class="text-white transition hover:text-[#d9974d]" href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="text-white transition hover:text-[#d9974d]" href="#destinos">Destinos</a>
+                        </li>
+                        <li>
+                            <a class="text-white transition hover:text-[#d9974d]" href="#study">Study</a>
+                        </li>
+                        <li>
+                            <a class="text-white transition hover:text-[#d9974d]" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="text-white transition hover:text-[#d9974d]" href="#contacto">Contacto</a>
+                        </li>
+                        <li>
+                            <a class="text-white transition hover:text-[#d9974d]" href="#"><i class="fa-solid fa-bars"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+	</header>
+
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("abajo",window.scrollY>0);
+		})
+	</script>
+	<style>
+		header.abajo{
+			background:#203264;
+		}
+		header.abajo .logo,
+		header.abajo ul li a{
+			color: #fff;
+		}
+	</style>
