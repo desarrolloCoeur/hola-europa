@@ -2,9 +2,9 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import LastBlogs from '../components/LastBlogs.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Banner from "../components/Banner.astro";
-
 ---
 
 <!doctype html>
@@ -18,9 +18,10 @@ import Banner from "../components/Banner.astro";
             <Banner />
 
             <div>
-
                 <!-- Experiencias -->
-                <section class="text-center my-12  bg-world bg-cover bg-center bg-no-repeat">
+                <section
+                    class="text-center my-12 bg-world bg-cover bg-center bg-no-repeat"
+                >
                     <h1
                         class="text-6xl text-[#d9974d] font-semibold tracking-wide pt-12"
                     >
@@ -35,7 +36,7 @@ import Banner from "../components/Banner.astro";
                     <div
                         class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:my-12 lg:px-8 flex"
                     >
-                    <!-- Slider main container -->
+                        <!-- Slider main container -->
                         <div class="swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
@@ -95,7 +96,6 @@ import Banner from "../components/Banner.astro";
                                             </p>
                                         </div>
                                     </a>
-                                    
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="#" class="block">
@@ -124,7 +124,6 @@ import Banner from "../components/Banner.astro";
                                             </p>
                                         </div>
                                     </a>
-                                    
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="#" class="block">
@@ -153,95 +152,139 @@ import Banner from "../components/Banner.astro";
                                             </p>
                                         </div>
                                     </a>
-                                    
                                 </div>
-
                             </div>
 
-                        
                             <!-- If we need navigation buttons -->
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
-                        
                         </div>
                     </div>
-                    
+
                     <div class="container mx-auto w-11/12 max-w-screen-xl my-20">
                         <div class="grid md:grid-cols-2 gap-10">
                             <div class="text-left">
-                                <h2
-                                class="text-5xl text-[#d9974d] font-semibold tracking-wide mt-20"
-                                >
+                                <h2 class="text-5xl text-[#d9974d] font-semibold tracking-wide mt-20">
                                     Por que Hola Europa?
                                 </h2>
-                                <p
-                                class="text-[#203264] pt-3 text-lg font-semibold tracking-wide"
-                                >
-                                Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. Eveniet tempore nisispis.Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. Eveniet tempore nisispis.Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. Eveniet tempore nisispis.Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. Eveniet tempore nisispis.
+                                <p class="text-[#203264] pt-3 text-lg font-semibold tracking-wide">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eveniet tempore
+                                    nisispis.Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Eveniet
+                                    tempore nisispis.Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Eveniet
+                                    tempore nisispis.Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Eveniet
+                                    tempore nisispis.
                                 </p>
                             </div>
 
-
                             <!-- Slider main container -->
-                                <div class="w-full">
-                                    <img
-                                                src="/images/familiar.webp"
-                                                alt=""
-                                                class="h-[300px] w-full object-contain sm:h-[400px]"
-                                            />
+                            <div class="w-full">
+                                <img
+                                    src="/images/familiar.webp"
+                                    alt=""
+                                    class="h-[300px] w-full object-contain sm:h-[400px]"
+                                />
 
-                                    <!-- If we need scrollbar -->
-                                </div>
-
-
-
+                                <!-- If we need scrollbar -->
+                            </div>
                         </div>
-
-
                     </div>
-
-
-
                 </section>
 
-
-                <div class="bg-[#203264] py-24 ">
-                    <h2 class="text-center  text-4xl md:text-6xl text-[#d9974d] font-semibold tracking-wide pb-12 max-w-[700px] mx-auto">Pasos para planear una experiencia inigualable</h2>
+                <div class="bg-[#203264] py-24">
+                    <h2 class="text-center text-4xl md:text-6xl text-[#d9974d] font-semibold tracking-wide pb-12 max-w-[700px] mx-auto">
+                        Pasos para planear una experiencia inigualable
+                    </h2>
                     <div class="grid sm:grid-cols-2 md:grid-cols-4 container w-11/12 mx-auto gap-20 md:gap-10">
                         <div class="flex flex-col items-center justify-start text-center gap-3">
-                            <p class="bg-[#d9974d] text-[#203264] text-xl h-10 w-10 rounded-full flex items-center justify-center font-bold">1</p>
+                            <p class="bg-[#d9974d] text-[#203264] text-xl h-10 w-10 rounded-full flex items-center justify-center font-bold">
+                                1
+                            </p>
                             <i class="fa-solid fa-calendar text-5xl my-4 text-white"></i>
-                            <h4 class="text-2xl text-[#d9974d] font-bold tracking-wide mb-3">Elige tu destino soñado y las fechas</h4>
-                            <p class="text-white">En este queremos que nos cuentes a dónde y con quién quiereres viajar y si quisieras realizar algo en especial, algo para completar tu aventura</p>
+                            <h4 class="text-2xl text-[#d9974d] font-bold tracking-wide mb-3">
+                                Elige tu destino soñado y las fechas
+                            </h4>
+                            <p class="text-white">
+                                En este queremos que nos cuentes a dónde y con
+                                quién quiereres viajar y si quisieras realizar
+                                algo en especial, algo para completar tu
+                                aventura
+                            </p>
                         </div>
-                        <div class="flex flex-col items-center justify-start text-center gap-3">
-                            <p class="bg-[#d9974d] text-[#203264] text-xl h-10 w-10 rounded-full flex items-center justify-center font-bold">2</p>
-                            <i class="fa-solid fa-compass text-5xl my-4 text-white"></i>
-                            <h4 class="text-2xl text-[#d9974d] font-bold tracking-wide mb-3">Espera tu propuesta</h4>
-                            <p class="text-white">En base a tus requerimentos diseñaremos tu viaje soñado, el cuál te mandaremos para tu aprobación</p>
+                        <div
+                            class="flex flex-col items-center justify-start text-center gap-3"
+                        >
+                            <p
+                                class="bg-[#d9974d] text-[#203264] text-xl h-10 w-10 rounded-full flex items-center justify-center font-bold"
+                            >
+                                2
+                            </p>
+                            <i
+                                class="fa-solid fa-compass text-5xl my-4 text-white"
+                            ></i>
+                            <h4
+                                class="text-2xl text-[#d9974d] font-bold tracking-wide mb-3"
+                            >
+                                Espera tu propuesta
+                            </h4>
+                            <p class="text-white">
+                                En base a tus requerimentos diseñaremos tu viaje
+                                soñado, el cuál te mandaremos para tu aprobación
+                            </p>
                         </div>
-                        <div class="flex flex-col items-center justify-start text-center gap-3">
-                            <p class="bg-[#d9974d] text-[#203264] text-xl h-10 w-10 rounded-full flex items-center justify-center font-bold">3</p>
-                            <i class="fa-solid fa-earth-americas text-5xl my-4 text-white"></i>
-                            <h4 class="text-2xl text-[#d9974d] font-bold tracking-wide mb-3">Ilusiónate de tu próximo viaje y haz tus maletas</h4>
-                            <p class="text-white">Cuándo estes 100% convencido de que es tu viaje soñado, empezamos a revisar detalles como pasaporte, visas, pagos y recomendaciones</p>
+                        <div
+                            class="flex flex-col items-center justify-start text-center gap-3"
+                        >
+                            <p
+                                class="bg-[#d9974d] text-[#203264] text-xl h-10 w-10 rounded-full flex items-center justify-center font-bold"
+                            >
+                                3
+                            </p>
+                            <i
+                                class="fa-solid fa-earth-americas text-5xl my-4 text-white"
+                            ></i>
+                            <h4
+                                class="text-2xl text-[#d9974d] font-bold tracking-wide mb-3"
+                            >
+                                Ilusiónate de tu próximo viaje y haz tus maletas
+                            </h4>
+                            <p class="text-white">
+                                Cuándo estes 100% convencido de que es tu viaje
+                                soñado, empezamos a revisar detalles como
+                                pasaporte, visas, pagos y recomendaciones
+                            </p>
                         </div>
-                        <div class="flex flex-col items-center justify-start text-center gap-3">
-                            <p class="bg-[#d9974d] text-[#203264] text-xl h-10 w-10 rounded-full flex items-center justify-center font-bold">4</p>
-                            <i class="fa-solid fa-person-walking-luggage text-5xl my-4 text-white"></i>
-                            <h4 class="text-2xl text-[#d9974d] font-bold tracking-wide mb-3">Disfruta la experiencia Hola Europa!</h4>
-                            <p class="text-white">!Bienvenido a tu nueva experiencia con Hola Europa!</p>
+                        <div
+                            class="flex flex-col items-center justify-start text-center gap-3"
+                        >
+                            <p
+                                class="bg-[#d9974d] text-[#203264] text-xl h-10 w-10 rounded-full flex items-center justify-center font-bold"
+                            >
+                                4
+                            </p>
+                            <i
+                                class="fa-solid fa-person-walking-luggage text-5xl my-4 text-white"
+                            ></i>
+                            <h4
+                                class="text-2xl text-[#d9974d] font-bold tracking-wide mb-3"
+                            >
+                                Disfruta la experiencia Hola Europa!
+                            </h4>
+                            <p class="text-white">
+                                !Bienvenido a tu nueva experiencia con Hola
+                                Europa!
+                            </p>
                         </div>
-
                     </div>
-
-
                 </div>
 
+                <!-- Blog -->
+                <section>
+                    <LastBlogs />
+                </section>
 
                 <!-- Agenda rapido -->
                 <section
@@ -331,7 +374,6 @@ import Banner from "../components/Banner.astro";
 
                 <!-- Reviews -->
                 <section>
-
                     <div class="relative text-center py-16">
                         <h2
                             class="text-4xl md:text-6xl text-[#d9974d] font-semibold tracking-wide"
@@ -347,62 +389,58 @@ import Banner from "../components/Banner.astro";
                         <div
                             class="max-w-screen-xl px-4 py-14 mx-auto sm:px-6 sm:py-12 lg:px-8 flex"
                         >
-
-                        <!-- Slider main container -->
-                        <div class="swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <div class="block">
-                                    <img
-                                        src="/images/familiar.webp"
-                                        alt=""
-                                        class="h-[300px] w-full object-contain sm:h-[400px]"
-                                    />
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="block">
+                                            <img
+                                                src="/images/familiar.webp"
+                                                alt=""
+                                                class="h-[300px] w-full object-contain sm:h-[400px]"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="block">
+                                            <img
+                                                src="/images/luna-de-miel.webp"
+                                                alt=""
+                                                class="h-[300px] w-full object-contain sm:h-[400px]"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="block">
+                                            <img
+                                                src="/images/engrupo.webp"
+                                                alt=""
+                                                class="h-[300px] w-full object-contain sm:h-[400px]"
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
 
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+
+                                <!-- If we need scrollbar -->
                             </div>
-                            <div class="swiper-slide">
-                                <div class="block">
-                                    <img
-                                        src="/images/luna-de-miel.webp"
-                                        alt=""
-                                        class="h-[300px] w-full object-contain sm:h-[400px]"
-                                    />
-                                </div>
-
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="block">
-                                    <img
-                                        src="/images/engrupo.webp"
-                                        alt=""
-                                        class="h-[300px] w-full object-contain sm:h-[400px]"
-                                    />
-                                </div>
-
-                            </div>
-
-
-                            </div>
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
-                        
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        
-                            <!-- If we need scrollbar -->
-                        </div>
-
                         </div>
                     </div>
                 </section>
             </div>
         </main>
         <Footer />
-        <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script
+            is:inline
+            src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+        ></script>
         <script src="../app.js"></script>
     </body>
 </html>
