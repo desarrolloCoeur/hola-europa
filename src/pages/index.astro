@@ -17,10 +17,40 @@ import Banner from "../components/Banner.astro";
         <main>
             <Banner />
             <div>
+
+            <section class="container mx-auto w-11/12 max-w-screen-xl my-24">
+                <div class="grid grid-cols-3">
+                    <div class="text-left col-span-2 my-auto mr-24">
+                        <h2 class="text-5xl text-[#d9974d] font-semibold tracking-wide">La emoción de viajar</h2>
+                        <p class="text-[#203264] pt-3 text-lg font-semibold tracking-wide">
+                            Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Eveniet tempore
+                            nisispis.Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Eveniet
+                            tempore nisispis.Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Eveniet
+                            tempore nisispis.Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Eveniet
+                            tempore nisispis.
+                        </p>
+                        <button class="pt-6">
+                            <a href="#" class="flex items-center bg-transparent rounded-full border border-[#d9974d] px-8 py-2 text-xl font-light text-[#d9974d] max-w-[210px]">
+                                Nosotros
+                            </a> 
+                        </button>
+                    </div>
+                    <div class="my-auto">
+                        <img src="/images/familiar.webp" class="h-[300px] w-full object-contain sm:h-[400px] mx-auto"/>
+                    </div>
+                </div>
+            </section>
+
+
+
                 <!-- Experiencias -->
                 <section class="text-center my-12 bg-world bg-cover bg-center bg-no-repeat">
-                    <h1 class="text-6xl text-[#d9974d] font-semibold tracking-wide pt-12">
-                        La emoción de viajar
+                    <h1 class="text-5xl text-[#d9974d] font-semibold tracking-wide">
+                        ¿Por que Hola Europa?
                     </h1>
                     <p class="text-[#203264] pt-3 text-lg font-semibold tracking-wide">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -97,40 +127,13 @@ import Banner from "../components/Banner.astro";
                                     </a>
                                 </div>
                             </div>
-
                             <!-- If we need navigation buttons -->
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>
                     </div>
-
-                    <div class="container mx-auto w-11/12 max-w-screen-xl my-20">
-                        <div class="grid md:grid-cols-2 gap-10">
-                            <div class="text-left">
-                                <h2 class="text-5xl text-[#d9974d] font-semibold tracking-wide mt-20">
-                                    Por que Hola Europa?
-                                </h2>
-                                <p class="text-[#203264] pt-3 text-lg font-semibold tracking-wide">
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit. Eveniet tempore
-                                    nisispis.Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing elit. Eveniet
-                                    tempore nisispis.Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing elit. Eveniet
-                                    tempore nisispis.Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing elit. Eveniet
-                                    tempore nisispis.
-                                </p>
-                            </div>
-
-                            <!-- Slider main container -->
-                            <div class="w-full">
-                                <img src="/images/familiar.webp" class="h-[300px] w-full object-contain sm:h-[400px]"/>
-                                <!-- If we need scrollbar -->
-                            </div>
-                        </div>
-                    </div>
                 </section>
+
 
                 <!-- <div class="bg-[#203264] py-24">
                     <h2 class="text-center text-4xl md:text-6xl text-[#d9974d] font-semibold tracking-wide pb-12 max-w-[700px] mx-auto">
@@ -197,48 +200,31 @@ import Banner from "../components/Banner.astro";
                 </section>
 
                 <!-- Agenda rapido -->
-                <section
-                    class="relative bg-[url('/images/colosseum-in-rome-at-dusk.webp')] bg-cover bg-center bg-no-repeat lg:h-[75vh] h-[80vh] flex items-center justify-center"
-                >
-                    <div
-                        class="absolute inset-0 bg-black/50 bg-transparent from-black/50 to-black/50 bg-gradient-to-r bg-gradient-to-l"
-                    >
+                <section class="relative bg-[url('/images/colosseum-in-rome-at-dusk.webp')] bg-cover bg-center bg-no-repeat lg:h-[75vh] h-[80vh] flex items-center justify-center">
+                    <div class="absolute inset-0 bg-black/50 bg-transparent from-black/50 to-black/50 bg-gradient-to-r bg-gradient-to-l">
                     </div>
                     <div class="relative text-center lg:pt-24 pt-8">
-                        <h1
-                            class="lg:text-6xl text-3xl text-white font-semibold tracking-wide"
-                        >
-                            Agenda rápido
+                        <h1 class="lg:text-6xl text-3xl text-white font-semibold tracking-wide">
+                            Contacto
                         </h1>
                         <div class="lg:pt-12 pt-6 lg:w-[50vw] w-[90vw] m-auto">
                             <div class="pb-6">
                                 <div class="flex gap-6">
                                     <h1 class="text-white my-auto">NOMBRE</h1>
-                                    <input
-                                        type="text"
-                                        class="w-full bg-transparent rounded-full border border-[#d9974d] focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8"
-                                    />
+                                    <input type="text" class="w-full bg-transparent rounded-full border border-[#d9974d] focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8"/>
                                 </div>
                             </div>
-                            <div
-                                class="grid lg:grid-cols-2 grid-cols-1 gap-6 pb-6"
-                            >
+                            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 pb-6">
                                 <div class="flex gap-10">
                                     <h1 class="text-white my-auto">FECHA</h1>
-                                    <input
-                                        type="text"
-                                        class="w-full bg-transparent rounded-full border border-[#d9974d] focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8"
-                                    />
+                                    <input type="text" class="w-full bg-transparent rounded-full border border-[#d9974d] focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8"/>
                                 </div>
                                 <div class="flex lg:gap-10 gap-3 justify-end">
                                     <h1 class="text-white my-auto">
                                         PAÍSES A VISITAR
                                     </h1>
                                     <div class="flex gap-3">
-                                        <button
-                                            class="rounded-full text-white border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]"
-                                            >1</button
-                                        >
+                                        <button class="rounded-full text-white border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]">1</button>
                                         <button
                                             class="rounded-full text-white border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]"
                                             >2</button
