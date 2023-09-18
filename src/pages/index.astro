@@ -194,47 +194,40 @@ import Banner from "../components/Banner.astro";
                     </div>
                 </div> -->
 
-                <!-- Blog -->
-                <section>
-                    <LastBlogs />
-                </section>
-
                 <!-- Agenda rapido -->
-                <section class="relative bg-[url('/images/colosseum-in-rome-at-dusk.webp')] bg-cover bg-center bg-no-repeat lg:h-[75vh] h-[80vh] flex items-center justify-center">
-                    <div class="absolute inset-0 bg-black/50 bg-transparent from-black/50 to-black/50 bg-gradient-to-r bg-gradient-to-l">
-                    </div>
-                    <div class="relative text-center lg:pt-24 pt-8">
-                        <h1 class="lg:text-6xl text-3xl text-white font-semibold tracking-wide">
+                <section class="items-center justify-center lg:py-12 py-8">
+                    <div class="text-center">
+                        <h1 class="lg:text-6xl text-3xl text-[#d9974d] font-semibold tracking-wide">
                             Contacto
                         </h1>
                         <div class="lg:pt-12 pt-6 lg:w-[50vw] w-[90vw] m-auto">
                             <div class="pb-6">
                                 <div class="flex gap-6">
-                                    <h1 class="text-white my-auto">NOMBRE</h1>
+                                    <h1 class="text-[#d9974d] my-auto">NOMBRE</h1>
                                     <input type="text" class="w-full bg-transparent rounded-full border border-[#d9974d] focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8"/>
                                 </div>
                             </div>
                             <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 pb-6">
                                 <div class="flex gap-10">
-                                    <h1 class="text-white my-auto">FECHA</h1>
+                                    <h1 class="text-[#d9974d] my-auto">FECHA</h1>
                                     <input type="text" class="w-full bg-transparent rounded-full border border-[#d9974d] focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8"/>
                                 </div>
                                 <div class="flex lg:gap-10 gap-3 justify-end">
-                                    <h1 class="text-white my-auto">
+                                    <h1 class="text-[#d9974d] my-auto">
                                         PAÍSES A VISITAR
                                     </h1>
                                     <div class="flex gap-3">
-                                        <button class="rounded-full text-white border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]">1</button>
+                                        <button class="rounded-full text-[#d9974d] border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]">1</button>
                                         <button
-                                            class="rounded-full text-white border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]"
+                                            class="rounded-full text-[#d9974d] border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]"
                                             >2</button
                                         >
                                         <button
-                                            class="rounded-full text-white border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]"
+                                            class="rounded-full text-[#d9974d] border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]"
                                             >3</button
                                         >
                                         <button
-                                            class="rounded-full text-white border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]"
+                                            class="rounded-full text-[#d9974d] border border-[#d9974d] py-2 px-4 focus:bg-[#d9974d]"
                                             >4</button
                                         >
                                     </div>
@@ -244,14 +237,14 @@ import Banner from "../components/Banner.astro";
                                 class="grid lg:grid-cols-2 grid-cols-1 gap-6 pb-6"
                             >
                                 <div class="flex gap-3">
-                                    <h1 class="text-white my-auto">TELÉFONO</h1>
+                                    <h1 class="text-[#d9974d] my-auto">TELÉFONO</h1>
                                     <input
                                         type="text"
                                         class="w-full bg-transparent rounded-full border border-[#d9974d] focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8"
                                     />
                                 </div>
                                 <div class="flex gap-6">
-                                    <h1 class="text-white my-auto">CORREO</h1>
+                                    <h1 class="text-[#d9974d] my-auto">CORREO</h1>
                                     <input
                                         type="text"
                                         class="w-full bg-transparent rounded-full border border-[#d9974d] focus:ring-2 focus:ring-[#d9974d] text-white outline-none text-white py-1 px-3 leading-8"
@@ -268,79 +261,199 @@ import Banner from "../components/Banner.astro";
                     </div>
                 </section>
 
-                <!-- Reviews -->
-                <section>
-                    <div class="relative text-center pt-16">
-                        <h2 class="text-4xl md:text-6xl text-[#d9974d] font-semibold tracking-wide">
-                            Experiencias de nuestros clientes
-                        </h2>
-                        <p class="text-[#203264] pt-3 text-lg font-semibold tracking-wide">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Eveniet tempore nisi reprehenderit, placeat
-                        </p>
-                        <div class="max-w-screen-xl px-4 py-14 mx-auto sm:px-6 sm:py-12 lg:px-8 flex">
-                            <!-- Slider main container -->
-                            <div class="swiper">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <div class="block">
-                                            <img src="/images/familiar.webp" class="h-[300px] w-full object-contain sm:h-[400px]"/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="block">
-                                            <img src="/images/luna-de-miel.webp" class="h-[300px] w-full object-contain sm:h-[400px]"/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="block">
-                                            <img src="/images/engrupo.webp" class="h-[300px] w-full object-contain sm:h-[400px]"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
 
-                                <!-- If we need navigation buttons -->
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-
-                                <!-- If we need scrollbar -->
+<!-- Seccion reseñas de clientes -->
+    <section>
+        <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+            <h2 class="text-5xl text-[#d9974d] text-center font-semibold tracking-wide sm:text-5xl">
+                Reseñas de Clientes       
+            </h2>
+            <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+                <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                    <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" class="h-14 w-14 rounded-full object-cover"/>
+                    <div>
+                        <p class="mt-0.5 text-lg font-medium text-[#203264]">Paul González</p>
+                        <div class="flex justify-start gap-0.5 text-green-500">
+                            <p class="mt-0.5 text-sm font-light text-gray-900 pr-2">14 Sep 2023 </p>
+                            <img width="24" height="24" src="https://img.icons8.com/color/48/mexico.png" alt="mexico"/>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-700">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit
+                    rerum incidunt, a consequuntur recusandae ab saepe illo est quia
+                    obcaecati neque quibusdam eius accusamus error officiis atque
+                    voluptates magnam!
+                </p>
+                </blockquote>
+                <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" class="h-14 w-14 rounded-full object-cover"/>
+                        <div>
+                            <p class="mt-0.5 text-lg font-medium text-[#203264]">Emilio García</p>
+                            <div class="flex justify-start gap-0.5 text-green-500">
+                                <p class="mt-0.5 text-sm font-light text-gray-900 pr-2">15 Sep 2023 </p>
+                                <img width="24" height="24" src="https://img.icons8.com/fluency/48/colombia.png" alt="colombia"/>
                             </div>
                         </div>
                     </div>
-                </section>
-
-
-                <section class="text-center my-12">
-                    <h1 class="text-6xl text-[#d9974d] font-semibold tracking-wide pt-12">
-                        Experiencias destacadas
-                    </h1>
-                    <div class="w-[87%] mx-auto flex flex-wrap justify-around pt-6">
-                        <a href="">
-                            <img src="/images/alexandre-chambon-aapSemzfsOk-unsplash.webp" class="object-cover p-[10px] h-[250px] lg:w-[260px] w-full" />
-                        </a>
-                        <a href="">
-                            <img src="/images/atikh-bana-Ycds6emp7BA-unsplash.webp" class="object-cover p-[10px] h-[250px] lg:w-[260px] w-full" />
-                        </a>
-                        <a href="">
-                            <img src="/images/etienne-boulanger-6-KiGzRZoeg-unsplash.webp" class="object-cover p-[10px] h-[250px] lg:w-[260px] w-full" />
-                        </a>
-                        <a href="">
-                            <img src="/images/mathew-schwartz-Kyxejaf39vM-unsplash.webp" class="object-cover p-[10px] h-[250px] lg:w-[260px] w-full" />
-                        </a>
-                        <a href="">
-                            <img src="/images/nils-nedel-ONpGBpns3cs-unsplash.webp" class="object-cover p-[10px] h-[250px] lg:w-[260px] w-full" />
-                        </a>
+                    <p class="mt-4 text-gray-700">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit
+                        rerum incidunt, a consequuntur recusandae ab saepe illo est quia
+                        obcaecati neque quibusdam eius accusamus error officiis atque
+                        voluptates magnam!
+                    </p>
+                </blockquote>
+                <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" class="h-14 w-14 rounded-full object-cover"/>
+                        <div>
+                            <p class="mt-0.5 text-lg font-medium text-[#203264]">Henry Smith</p>
+                            <div class="flex justify-start gap-0.5 text-green-500">
+                                <p class="mt-0.5 text-sm font-light text-gray-900 pr-2">16 Sep 2023 </p>
+                                <img width="24" height="24" src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
+                            </div>
+                        </div>
                     </div>
-                </section>
-
-
-
-
+                    <p class="mt-4 text-gray-700">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit
+                        rerum incidunt, a consequuntur recusandae ab saepe illo est quia
+                        obcaecati neque quibusdam eius accusamus error officiis atque
+                        voluptates magnam!
+                    </p>
+                </blockquote>        
             </div>
+        </div>
+    </section>
+
+
+
+    <!-- Reviews -->
+    <section class="text-center my-12 bg-[url('/images/patron1.webp')] bg-cover bg-center bg-no-repeat">
+        <div class="relative text-center pt-16">
+            <h2 class="text-4xl md:text-6xl text-[#d9974d] font-semibold tracking-wide">
+                Experiencias de nuestros clientes
+            </h2>
+            <p class="text-[#203264] pt-3 text-lg font-semibold tracking-wide">
+                Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Eveniet tempore nisi reprehenderit, placeat
+            </p>
+            <div class="max-w-screen-xl px-4 py-14 mx-auto sm:px-6 sm:py-12 lg:px-8 flex">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="block">
+                                <img src="/images/familiar.webp" class="h-[300px] w-full object-contain sm:h-[400px]"/>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="block">
+                                <img src="/images/luna-de-miel.webp" class="h-[300px] w-full object-contain sm:h-[400px]"/>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="block">
+                                <img src="/images/engrupo.webp" class="h-[300px] w-full object-contain sm:h-[400px]"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- If we need scrollbar -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blogs -->
+    <section>
+        <LastBlogs />
+    </section>
+
+    
+    <!-- Seccion Newletter -->
+    <section class="relative bg-[url('/images/colosseum-in-rome-at-dusk.webp')] bg-cover bg-center bg-no-repeat h-[70vh]">
+        <div class="absolute inset-0 bg-black/60 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+        <div class="relative p-8 md:p-12 lg:px-16 lg:py-24 ">
+            <div class="mx-auto max-w-lg text-center">
+                <h2 class="text-[#d9974d] text-5xl font-bold tracking-wide">Newsletter</h2>
+                <p class="hidden text-white sm:mt-4 sm:block">
+                    Apúntate a nuestra newsletter y podrás conocer todas nuestras novedadese inspiración para tu viaje de ensueño.
+                </p>
+            </div>
+            <div class="mx-auto mt-8 max-w-xl">
+                <form action="#" class="sm:flex">
+                    <div class="sm:flex-1">
+                        <input type="email" class="w-full bg-transparent rounded-l-full border border-[#d9974d]  focus:ring-2 focus:ring-[#d9974d] outline-none text-white py-1 px-3 leading-8"/>
+                    </div>
+                    <button type="submit" class="group w-fullbg-transparent rounded-r-full border border-[#d9974d] text-white py-1 px-3 leading-8 focus:bg-[#d9974d]">
+                        <span class="text-sm font-medium">SUSCRIBIRME </span>
+                    </button>
+                </form>
+            </div>
+            <div class="flex items-center justify-center pt-6">
+                <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="link-checkbox" class="ml-2 text-sm font-medium text-white ">He leído y acepto los <a href="#" class="text-[#d9974d] hover:underline">términos y condiciones</a>.</label>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Seccion instagram -->
+    <section class="text-center my-20">
+        <h1 class="text-5xl text-[#d9974d] font-semibold tracking-wide">
+            Síguenos en nuestras redes sociales
+        </h1>
+        <div class="w-[87%] mx-auto flex flex-wrap justify-around pt-6">
+            <a href="https://www.instagram.com/" target="_blank">
+                <div class="bg-[url('/images/alexandre-chambon-aapSemzfsOk-unsplash.webp')] bg-cover bg-center bg-no-repeat object-cover flex flex-col justify-between p-[10px] h-[250px] lg:w-[260px] w-full">
+                    <div class="flex justify-end m-3">
+                        <svg aria-label="Secuencia" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)" height="22" role="img" viewBox="0 0 48 48" width="22"><title>Secuencia</title><path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path></svg>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <div class="bg-[url('/images/atikh-bana-Ycds6emp7BA-unsplash.webp')] bg-cover bg-center bg-no-repeat object-cover flex flex-col justify-between p-[10px] h-[250px] lg:w-[260px] w-full">
+                    <div class="flex justify-end m-3">
+                        <svg aria-label="Secuencia" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)" height="22" role="img" viewBox="0 0 48 48" width="22"><title>Secuencia</title><path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path></svg>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <div class="bg-[url('/images/etienne-boulanger-6-KiGzRZoeg-unsplash.webp')] bg-cover bg-center bg-no-repeat object-cover flex flex-col justify-between p-[10px] h-[250px] lg:w-[260px] w-full">
+                    <div class="flex justify-end m-3">
+                        <svg aria-label="Vídeo" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)" height="18" role="img" viewBox="0 0 24 24" width="18"><title>Vídeo</title><path d="M5.888 22.5a3.46 3.46 0 0 1-1.721-.46l-.003-.002a3.451 3.451 0 0 1-1.72-2.982V4.943a3.445 3.445 0 0 1 5.163-2.987l12.226 7.059a3.444 3.444 0 0 1-.001 5.967l-12.22 7.056a3.462 3.462 0 0 1-1.724.462Z"></path></svg>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <div class="bg-[url('/images/mathew-schwartz-Kyxejaf39vM-unsplash.webp')] bg-cover bg-center bg-no-repeat object-cover flex flex-col justify-between p-[10px] h-[250px] lg:w-[260px] w-full">
+                    <div class="flex justify-end m-3">
+                        <svg aria-label="Secuencia" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)" height="22" role="img" viewBox="0 0 48 48" width="22"><title>Secuencia</title><path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path></svg>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <div class="bg-[url('/images/nils-nedel-ONpGBpns3cs-unsplash.webp')] bg-cover bg-center bg-no-repeat object-cover flex flex-col justify-between p-[10px] h-[250px] lg:w-[260px] w-full">
+                    <div class="flex justify-end m-3">
+                        <svg aria-label="Vídeo" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)" height="18" role="img" viewBox="0 0 24 24" width="18"><title>Vídeo</title><path d="M5.888 22.5a3.46 3.46 0 0 1-1.721-.46l-.003-.002a3.451 3.451 0 0 1-1.72-2.982V4.943a3.445 3.445 0 0 1 5.163-2.987l12.226 7.059a3.444 3.444 0 0 1-.001 5.967l-12.22 7.056a3.462 3.462 0 0 1-1.724.462Z"></path></svg>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+        </div>
         </main>
         <Footer />
         <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
