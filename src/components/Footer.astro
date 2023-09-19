@@ -4,7 +4,7 @@ const today = new Date();
 
 <footer class="bg-[#203264]">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-        <div class="flex justify-between gap-20 lg:gap-5 flex-wrap flex-col-reverse lg:flex-row lg:flex-nowrap">
+        <div class="flex justify-between gap-12 lg:gap-5 flex-wrap flex-col-reverse lg:flex-row lg:flex-nowrap">
 
             <div class="text-xs text-center w-full lg:w-1/2">
                 <a href="#">
@@ -35,7 +35,8 @@ const today = new Date();
             </div> -->
 
             <div class="w-full lg:w-1/2">
-                <div class="grid grid-cols-6 my-auto w-full lg:w-full h-full gap-3">
+                <div class="grid lg:grid-cols-2 grid-cols-1 my-auto w-full lg:w-full h-full gap-3 ">
+                    <div class="grid grid-cols-3">
                     <div class="h-full w-px bg-[#d9974d] lg:justify-self-start justify-self-center"></div>
                     <div class="font-light tracking-wide text-white col-span-2	">
                         <p class="py-1"><a href="mailto:info@holaeuropa.com">info@holaeuropa.com</a></p>
@@ -44,16 +45,19 @@ const today = new Date();
                         <p class="py-1">46200 México</p>
                         <p class="py-1">Horario: L-V 9:00 - 19:00</p>
                     </div>
-                    <div class="font-light tracking-wide text-white col-span-2">
+                </div>
+                <div class="lg:grid lg:grid-cols-3 flex-row-reverse flex lg:gap-0 gap-10">
+                    <div class="font-light tracking-wide text-white lg:col-span-2 grow lg:my-0 my-auto">
                         <p class="py-1"><a href="/aviso-de-privacidad">Aviso de privacidad</a></p>
                         <p class="py-1"><a href="/uso-de-cookies">Uso de cookies</a></p>
                         <p class="py-1"><a href="/terminos-y-condiciones">Términos y condiciones</a></p>
                     </div>
-                    <div class="text-[#d9974d] flex flex-col gap-6 text-2xl lg:justify-self-end justify-self-center my-auto">
+                    <div class="text-[#d9974d] flex flex-col gap-6 text-2xl justify-between  pl-12">
                         <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                         <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
