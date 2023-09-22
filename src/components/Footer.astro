@@ -4,16 +4,18 @@ const today = new Date();
 
 <footer class="bg-[#203264]">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-        <div class="flex justify-between gap-20 lg:gap-5 flex-wrap flex-col-reverse lg:flex-row lg:flex-nowrap">
-            <div class="text-xs text-center w-full lg:w-1/3">
+        <div class="flex justify-between gap-12 lg:gap-5 flex-wrap flex-col-reverse lg:flex-row lg:flex-nowrap">
+
+            <div class="text-xs text-center w-full lg:w-1/2">
                 <a href="#">
-                    <img class="h-36 mx-auto" src="images/logo-circulo.png" alt="Logo Hola Europa">
+                    <img class="h-36 mx-auto" src="/images/logo-circulo.png" alt="Logo Hola Europa">
                 </a>
                 <p class="text-white pt-8">
                     Copyright &copy; 2023 Hola Europa. Todos los derechos reservados.
                 </p>
             </div>
-            <div class=" w-full lg:w-1/3">
+            
+            <!-- <div class=" w-full lg:w-1/3">
                 <div>
                     <h1 class="text-[#d9974d] text-3xl font-bold tracking-wide">Newsletter</h1>
                     <label class="py-3 font-light line-clamp-3 leading-snug tracking-wide text-white ">Apúntate a nuestra newsletter y podrás conocer todas nuestras novedadese inspiración para tu viaje de ensueño. </label>
@@ -30,21 +32,32 @@ const today = new Date();
                         <p class="text-white px-2 text-xs text-center">He leído y acepto las políticas de privacidad.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="grid grid-cols-5 my-auto w-full lg:w-1/3">
-                <div class="h-full w-px bg-[#d9974d] lg:justify-self-start justify-self-center"></div>
-                <div class="font-light tracking-wide text-white col-span-3">
-                    <p class="py-1">info@holaeuropa.com</p>
-                    <p class="py-1">311 45 67 00</p>
-                    <p class="py-1">C/ Callosa 02, 2A pta. 3</p>
-                    <p class="py-1">46200 México</p>
-                    <p class="py-1">Horario: L-V 9:00 - 19:00</p>
+            <div class="w-full lg:w-1/2">
+                <div class="grid lg:grid-cols-2 grid-cols-1 my-auto w-full lg:w-full h-full gap-3 ">
+                    <div class="grid grid-cols-3">
+                    <div class="h-full w-px bg-[#d9974d] lg:justify-self-start justify-self-center"></div>
+                    <div class="font-light tracking-wide text-white col-span-2	">
+                        <p class="py-1"><a href="mailto:info@holaeuropa.com">info@holaeuropa.com</a></p>
+                        <p class="py-1"><a href="tel:+52311456700">311 45 67 00</a></p>
+                        <p class="py-1">C/ Callosa 02, 2A pta. 3</p>
+                        <p class="py-1">46200 México</p>
+                        <p class="py-1">Horario: L-V 9:00 - 19:00</p>
+                    </div>
                 </div>
-                <div class="text-[#d9974d] flex flex-col gap-6 text-2xl lg:justify-self-end justify-self-center my-auto">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <div class="lg:grid lg:grid-cols-3 flex-row-reverse flex lg:gap-0 gap-10">
+                    <div class="font-light tracking-wide text-white lg:col-span-2 grow lg:my-0 my-auto">
+                        <p class="py-1"><a href="/aviso-de-privacidad">Aviso de privacidad</a></p>
+                        <p class="py-1"><a href="/uso-de-cookies">Uso de cookies</a></p>
+                        <p class="py-1"><a href="/terminos-y-condiciones">Términos y condiciones</a></p>
+                    </div>
+                    <div class="text-[#d9974d] flex flex-col gap-6 text-2xl justify-between  pl-12">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
