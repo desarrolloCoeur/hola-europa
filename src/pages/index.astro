@@ -21,8 +21,8 @@ import Banner from "../components/Banner.astro";
             <section class="container mx-auto w-11/12 max-w-screen-xl lg:my-24 my-12">
                 <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-6">
                     <div class="lg:text-left text-center lg:col-span-2 my-auto lg:mr-24 mr-0">
-                        <h2 class="lg:text-5xl text-4xl text-[#d9974d] font-semibold tracking-wide">La emoción de viajar</h2>
-                        <p class="text-[#203264] pt-3 text-lg font-semibold tracking-wide ">
+                        <h2 class="lg:text-5xl text-4xl text-[#d9974d] font-semibold tracking-wide">La <span class="custom-text">emoción </span>de viajar</h2>
+                        <p class="text-[#203264] pt-3 text-lg tracking-wide ">
                             Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Eveniet tempore
                             nisispis.Lorem ipsum dolor sit, amet
@@ -33,11 +33,11 @@ import Banner from "../components/Banner.astro";
                             consectetur adipisicing elit. Eveniet
                             tempore nisispis.
                         </p>
-                        <button class="pt-6">
-                            <a href="#" class="flex items-center bg-transparent rounded-full border border-[#d9974d] px-8 py-2 text-xl font-light text-[#d9974d] max-w-[210px]">
+                        <div class="py-10">
+                            <a href="#" class="bg-transparent rounded-sm border-2 border-[#d9974d] px-8 pb-2 text-xl font-bold text-[#d9974d]">
                                 Nosotros
                             </a> 
-                        </button>
+                        </div>
                     </div>
                     <div class="my-auto">
                         <img src="/images/familiar.webp" class="h-[300px] w-full object-contain sm:h-[400px] mx-auto"/>
@@ -50,13 +50,19 @@ import Banner from "../components/Banner.astro";
                 <!-- Experiencias -->
                 <section class="text-center my-12 bg-world bg-cover bg-center bg-no-repeat">
                     <h1 class="text-5xl text-[#d9974d] font-semibold tracking-wide">
-                        ¿Por que Hola Europa?
+                        ¿Por que <span class="custom-text">Hola</span><span class="custom-text-2"> EUROPA</span>?
                     </h1>
                     <p class="text-[#203264] pt-3 text-lg font-semibold tracking-wide">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eveniet tempore nisi lore
                     </p>
+
+                    <h2 class="lg:text-5xl text-4xl text-[#d9974d] font-semibold tracking-wide">Destinos</h2>
+
+
+
                     <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:my-12 lg:px-8 flex">
+                        
                     <!-- Slider main container -->
                     <div class="swiper">
                         <!-- Additional required wrapper -->
@@ -329,8 +335,8 @@ import Banner from "../components/Banner.astro";
 
 
 
-    <!-- Reviews -->
-    <section class="text-center my-12 bg-[url('/images/patron1.webp')] bg-cover bg-center bg-no-repeat">
+    <!-- Reviews bg-[url('/images/patron1.webp')] -->
+    <section class="text-center my-8  bg-cover bg-center bg-no-repeat">
         <div class="relative text-center pt-16">
             <h2 class="text-4xl md:text-6xl text-[#d9974d] font-semibold tracking-wide">
                 Experiencias de nuestros clientes
