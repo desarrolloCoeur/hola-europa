@@ -7,7 +7,7 @@ const posts = (await getCollection('blog')).sort(
 );
 ---
 <div class="container mx-auto w-11/12 max-w-screen-xl my-12">
-    <h2 class="text-6xl text-[#d9974d] font-semibold tracking-wide pt-12">Blogs</h2>
+    <h2 class="text-6xl text-[#d9974d] font-semibold tracking-wide pt-12 custom-text-2">Blogs</h2>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 my-12">
         
         {
@@ -16,19 +16,19 @@ const posts = (await getCollection('blog')).sort(
                 <div class="flex flex-col mb-12 overflow-hidden cursor-pointer">
                     <div class="flex-shrink-0">
                         <a href={`/blog/${post.slug}/`}>
-                            <img width={720} height={360} src={post.data.heroImage} alt=""  class="object-cover w-full h-52 rounded-lg"  />
+                            <img width={720} height={360} src={post.data.heroImage} alt="" class="object-cover w-full h-52 rounded-lg"  />
                         </a>
                     </div>
                     <div class="flex flex-col justify-between flex-1">
                         <div class="flex-1">
                             <a href={`/blog/${post.slug}/`}>
-                                <div class="flex pt-6  text-sm tracking-wider text-gray-900">
+                                <div class="flex pt-6  text-sm tracking-wider text-gray-900 ">
                                     <p><FormattedDate date={post.data.pubDate} /></p>
                                 </div>
                             </a>
                             <a href={`/blog/${post.slug}/`}>
-                                <h3 class="text-[#203264] py-3 text-xl font-bold">{post.data.title}</h3>
-                                <p class="tex-base text-gray-900">{post.data.description}</p>
+                                <h3 class="text-[#203264] py-1 text-xl font-bold custom-text-2">{post.data.title}</h3>
+                                <p class="tex-base text-gray-900 custom-text-2">{post.data.description}</p>
                             </a>
                         </div>
                     </div>
