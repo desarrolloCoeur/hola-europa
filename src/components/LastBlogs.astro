@@ -12,11 +12,11 @@ const posts = (await getCollection('blog')).sort(
         
         {
             posts.map((post) => (
-            <article class="relative overflow-hidden rounded-lg w-full">
+            <article class="relative overflow-hidden  w-full">
                 <div class="flex flex-col mb-12 overflow-hidden cursor-pointer">
                     <div class="flex-shrink-0">
                         <a href={`/blog/${post.slug}/`}>
-                            <img width={720} height={360} src={post.data.heroImage} alt="" class="object-cover w-full h-52 rounded-lg"  />
+                            <img width={720} height={360} src={post.data.heroImage} alt="" class="object-cover w-full h-52 "  />
                         </a>
                     </div>
                     <div class="flex flex-col justify-between flex-1">
